@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Otp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <input
+          type="text"
+          maxlength="1"
+          id="txt1"
+          onkeyup="move(event,'','txt1','txt2')"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          id="txt2"
+          onkeyup="move(event,'txt1','txt2','txt3')"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          id="txt3"
+          onkeyup="move(event,'txt2','txt3','txt4')"
+        />
+        <input
+          type="text"
+          maxlength="1"
+          id="txt4"
+          onkeyup="move(event,'txt3','txt4','')"
+        />
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
